@@ -16,7 +16,7 @@ export const SampleForm = ({ sampleForm }: SampleFormProps) => {
 		handleSubmit,
 		register,
 	} = sampleForm
-	const onSubmit = (data: any) => {
+	const onSubmit = (data: TSampleForm) => {
 		console.log(data)
 	}
 	const onError = (error: any) => console.log(error)
