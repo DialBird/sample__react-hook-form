@@ -6,6 +6,13 @@ declare module 'yup' {
 	// }
 }
 
+// NOTE: custom your default message
+yup.setLocale({
+	mixed: {
+		required: 'required',
+	},
+})
+
 // NOTE: add Method only with "test"
 // yup.addMethod(yup.string, 'sampleTest', () => {
 // 	return yup.string().test('sampleTest', 'error message', async (value) => {
